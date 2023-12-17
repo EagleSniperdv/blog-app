@@ -101,7 +101,7 @@ export default {
 
             if (this.errors.length === 0) {
                 axios
-                .post('http://localhost:5173/api/signup/', this.form)
+                .post('/api/signup/', this.form)
 
                     .then(response => {
                         if (response.data.message === 'success') {
