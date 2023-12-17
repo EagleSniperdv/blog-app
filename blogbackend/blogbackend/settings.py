@@ -56,10 +56,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'account',
-    'chat',
-    'notification',
-    'post',
-    'search',
+    
+    
     'rest_framework',
     'rest_framework_simplejwt',
     'corsheaders',
@@ -76,7 +74,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'wey_backend.urls'
+ROOT_URLCONF = 'blogbackend.urls'
 
 TEMPLATES = [
     {
@@ -94,7 +92,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'wey_backend.wsgi.application'
+WSGI_APPLICATION = 'blogbackend.wsgi.application'
 
 
 # Database
