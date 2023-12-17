@@ -1,0 +1,1 @@
+import{_ as e,o as s,c as o,a as t}from"./index-FNdshYoC.js";const a={},c={class:"about"},_=t("h1",null,"This is an about page",-1),n=[_];function r(i,l){return s(),o("div",c,[...n])}const p=e(a,[["render",r],["__file","C:/Users/User/Downloads/blog-app/blog-app/src/views/AboutView.vue"]]);export{p as default};

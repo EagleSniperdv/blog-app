@@ -37,19 +37,7 @@ def signup(request):
     })
 
     if form.is_valid():
-        user = form.save()
-        user.is_active = False
-        user.save()
-
-        url = f'{settings.WEBSITE_URL}/activateemail/?email={user.email}&id={user.id}'
-
-        send_mail(
-            "Please verify your email",
-            f"The url for activating your account is: {url}",
-            "noreply@wey.com",
-            [user.email],
-            fail_silently=False,
-        )
+        form.save()
     else:
         message = form.errors.as_json()
     
